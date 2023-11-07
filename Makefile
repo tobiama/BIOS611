@@ -2,7 +2,6 @@
 .PHONY: .created_directories
 
 clean: .created_directories
-	rm -r ./derived_data/*
 	rm -r ./Figures/*
 
 .created_directories: 
