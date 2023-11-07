@@ -10,3 +10,6 @@ RUN chown -R rstudio:rstudio /home/rstudio
 
 RUN apt update && apt install -y man-db && rm -rf /var/lib/apt/lists/*
 RUN yes|unminimize
+
+
+RUN R -e "install.packages(c('tidyverse','ggplot2','readr'))"

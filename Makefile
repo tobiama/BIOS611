@@ -1,11 +1,16 @@
 .PHONY: clean
-.PHONY: .created_directories
+.PHONY: created_directories
 
 clean: .created_directories
-	rm -r ./Figures/*
+	rm -rf Figures
+	rm -rf .created_directories
 
 .created_directories: 
 	mkdir -p Figures
+	touch .created_directories
 
-work/Figures/goalsperleague.jpeg: source_data/player_data_standard.csv 01_Data_Discovery.R
-	Rscript 01_Data_Discovery.R 
+Figures/goals_p_league.jpeg Figures/PL_goals.jpeg: \
+			.created_directories\
+			source_data/player_data_standard.csv\
+			01_Data_Discovery.R
+			Rscript 01_Data_Discovery.R 

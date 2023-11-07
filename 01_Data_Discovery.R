@@ -21,11 +21,11 @@ player_data_standard <- read.csv("source_data/player_data_standard.csv")
 Gls_Per_League <- player_data_standard %>%
   ggplot(aes(x = Gls, fill = League)) + geom_bar()
 
-ggsave(Gls_Per_League, filename = "work/Figures/goals_p_league.jpeg", 
+ggsave(Gls_Per_League, filename = "Figures/goals_p_league.jpeg", 
        dpi = 400, width = 5, height = 3.5)
        
 Premier_Gls <- player_data_standard %>%
   filter(League == "Premier League") %>% ggplot(aes(x = Gls)) + geom_bar()
 
-ggsave(Premier_Gls, filename = "work/Figures/PL_goals.jpeg", 
+ggsave(Premier_Gls, filename = "Figures/PL_goals.jpeg", 
        dpi = 400, width = 5, height = 3.5)
