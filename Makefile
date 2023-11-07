@@ -1,7 +1,7 @@
 .PHONY: clean
 .PHONY: created_directories
 
-clean: .created_directories
+clean: 
 	rm -rf Figures
 	rm -rf .created_directories
 
