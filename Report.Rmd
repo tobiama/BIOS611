@@ -1,0 +1,55 @@
+---
+title: "Report"
+author: "Madeline Tobias"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+tinytex::install_tinytex()
+```
+
+In this analysis, I will be using a data set, titled player_data_standard, that refers to individual players in European soccer clubs and their current affiliation, as well as standard statistics related to their season highlights.  
+
+```{r}
+setwd("/home/rstudio/work/611")
+getwd()
+player_data_standard <- read.csv("source_data/player_data_standard.csv")
+
+head(player_data_standard)
+```
+
+I will describe the meaning of the different columns. 
+
+Player - Player name 
+Nation - Abbreviations (2 variations) of the Nation where the player originates from 
+Pos - Position 
+League - League affiliation
+Squad - Squad (or team) affiliation 
+Age - Age of player
+Born - Year born 
+MP - Matches played
+Starts - Number of starts during the regular season 
+Min - Minutes Played 
+X90s - Number of minutes / 90, ie number of 'full game' lengths played in total 
+Gls - Goals scored 
+Ast - Assisted goals 
+G.A - Goals and assists 
+G.PK - Non-penalty goals
+PK - Peanalty kicks made
+PKatt - Penalty kicks attempted
+CrdY - Yellow Cards
+CrdR - Red Cards
+xG - Expected goals scored
+npxG- Non-penalty expected goals scored
+xAG - Expected assisted goals 
+npxG.xAG
+PrgC - Progressive Carries
+PrgP - Progressive passes
+PrgR - progressive receptions 
+Gls.1
+Ast.1
+G.A.1

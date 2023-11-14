@@ -24,13 +24,6 @@ Gls_Per_League <- player_data_standard %>%
 ggsave(Gls_Per_League, filename = "Figures/goals_p_league.jpeg", 
        dpi = 400, width = 5, height = 3.5)
        
-#goals scored by players in the Premier League
-Premier_Gls <- player_data_standard %>%
-  filter(League == "Premier League") %>% ggplot(aes(x = Gls)) + geom_bar()
-
-ggsave(Premier_Gls, filename = "Figures/PL_goals.jpeg", 
-       dpi = 400, width = 5, height = 3.5)
-
 
 ##
 #lets look at the premier league more in depth. 
@@ -55,6 +48,6 @@ ggsave(Premier_Gls, filename = "Figures/PL_goals.jpeg",
 Premier_Gls_per_squad <- player_data_standard %>%
   filter(League == "Premier League") %>% ggplot(aes(x = Gls, fill = Squad)) + geom_bar()
 
-ggsave(Premier_Gls_per_squad, filename = "Figures/PL_goals_per_squad.jpeg", 
+ggsave(Premier_Gls_per_squad, filename = "Figures/PL_goals_p_squad.jpeg", 
        dpi = 400, width = 5, height = 3.5)
 
