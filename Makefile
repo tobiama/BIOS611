@@ -9,7 +9,7 @@ clean:
 	mkdir -p Figures
 	touch .created_directories
 
-Figures/goals_p_league.jpeg Figures/PL_goals.jpeg: \
+Figures/goals_p_league.jpeg Figures/PL_goals.jpeg Figures/PL_age.jpeg Figures/PL_goals_p_squad.jpeg: \
 			.created_directories\
 			source_data/player_data_standard.csv\
 			01_Data_Discovery.R
