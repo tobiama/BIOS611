@@ -1,13 +1,20 @@
 .PHONY: clean
-.PHONY: created_directories
+.PHONY: .created_directories
+SHELL: /bin/bash
 
 clean: 
 	rm -rf Figures
 	rm -rf .created_directories
+	rm -rf Report.pdf
 
 .created_directories: 
 	mkdir -p Figures
 	touch .created_directories
+	mkdir -p Reports
+	
+Report.pdf:\
+ Report.Rmd\
+	Rscript -e "rmarkdown::render('Report.Rmd',output_format='pdf_document')"
 
 Figures/goals_p_league.jpeg Figures/PL_goals.jpeg Figures/PL_age.jpeg Figures/PL_goals_p_squad.jpeg: \
 			.created_directories\
