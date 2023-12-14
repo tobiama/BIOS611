@@ -6,6 +6,8 @@ Please see my Makefile to run all code for this project.
 
 First, clone my git repository to obtain all code required for the project. (as a note, I used a BIOS VM for this project) 
 
+1. git clone https://github.com/tobiama/Bios611
+
 
 Next, I did things a little bit differently, but rather than being in the work directory, I mounted the parent directory of the project rather than the directory of the project itself. 
 
