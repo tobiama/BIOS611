@@ -7,7 +7,6 @@ Please see my Makefile to run all code for this project.
 First, clone my git repository to obtain all code required for the project. 
 
 
-
 Next, I did things a little bit differently, but rather than being in the work directory, I mounted the parent directory of the project rather than the directory of the project itself. 
 
 Run the following lines of code: 
@@ -25,11 +24,15 @@ Run the following lines of code:
 In the browser, open localhost:8787.  Enter username = rstudio, password = pw 
 
 
+Go into the terminal in Rstudio.  
+
+1. cd work 
+
 Now run the following lines of code from my makefile:
 
 1.  make clean
 2.  make .created_directories
-3. make Figures ******
+3.  make Figures/cor_plot.jpeg Figures/cluster_plot.jpeg Figures/PL_age.jpeg Figures/zoom_goals_p_league.jpeg Figures/prog_stats_p_league.jpeg
 4.  make Report.pdf
 
 My final report is located in Report.pdf.

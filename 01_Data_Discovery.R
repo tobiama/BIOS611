@@ -84,7 +84,7 @@ for (i in 1:length(player_data_standard$Pos)){
 league_means_prog <- player_data_standard %>% group_by(League) %>%
   summarise(league_means = mean(Progressive, na.rm = TRUE))
 
-Prog_stats_p_league <- league_means %>% 
+Prog_stats_p_league <- league_means_prog %>% 
   ggplot(aes(x = league_means, fill = League)) +geom_bar()
 
 ggsave(Prog_stats_p_league, filename = "Figures/prog_stats_p_league.jpeg", 
@@ -112,6 +112,6 @@ transform = as.data.frame(-data.pca$loadings[,1:2])
 
 kmeans_d = kmeans(transform, centers = 3, nstart = 10)
 cluster_plot <- fviz_cluster(kmeans_d, data = transform)
-
 ggsave(cluster_plot, filename = "Figures/cluster_plot.jpeg", 
        dpi = 400, width = 5, height = 3.5)
+
