@@ -17,35 +17,61 @@ In this analysis, I will be using a data set, titled player_data_standard, that 
 I will describe the meaning of the different KEY columns. 
 
 Player - Player name 
+
 Nation - Abbreviations (2 variations) of the Nation where the player originates from 
+
 Pos - Position 
+
 League - League affiliation
+
 Squad - Squad (or team) affiliation 
+
 Age - Age of player
+
 Born - Year born 
+
 MP - Matches played
+
 Starts - Number of starts during the regular season 
+
 Min - Minutes Played 
+
 X90s - Number of minutes / 90, ie number of 'full game' lengths played in total 
+
 Gls - Goals scored 
+
 Ast - Assisted goals 
+
 G.A - Goals and assists 
+
 G.PK - Non-penalty goals
+
 PK - Peanalty kicks made
+
 PKatt - Penalty kicks attempted
+
 CrdY - Yellow Cards
+
 CrdR - Red Cards
+
 xG - Expected goals scored
+
 npxG- Non-penalty expected goals scored
+
 xAG - Expected assisted goals 
+
 PrgC - Progressive Carries
+
 PrgP - Progressive passes
+
 PrgR - progressive receptions 
 
 
 As I began to work on this project, I realized a few key things.  First, while this dataset does include some very interesting information about players and their in game statistics, it lacks any sort of ranking system by which to identify players in terms of skill level.  If I were to redo the entire project, I would try to find a more robust dataset that is a better descriptor of overall player skill, which this data does not. 
 
 As stated before, I want to determine if the Premier League is the best soccer league in Europe by looking at individual player quality. 
+
+\newpage
 
 # Cluster Analysis 
 
@@ -57,8 +83,14 @@ Below is a correlation plot that shows the correlation between some of the key n
 ![Correlation Plot](Figures/cor_plot.jpeg){width=50%}
 
 
+Next, I will show the two distinct clusters that can be found in the data. 
+
+![Cluster Plot](Figures/cluster_plot.jpeg){width=50%}
 
 
+Looking closely, the red cluster represents variables such as Gls, Ast, and Pk, which are sums of different actions throughout the year.  The blue cluster is mainly commprised by averages of goals or minutes, etc. as well as expected stats per game. 
+
+\newpage
 
 # Premier League - Player Age
 
@@ -72,7 +104,7 @@ Below is a histogram of player age.
 This shows that there is a good, approximately normal, distribution of ages with approximate age of about 25, and a good number of players below the 25 year old age mark.  Young teams are usually a sign of success when there are veteran players also on contract, and because this distribution is approximately normal, this seems promising in terms of player growth.  
 
 
-
+\newpage
 
 # Goals 
 
@@ -85,7 +117,7 @@ In terms of overall winningness, goal scoring is incredibly important.  I will f
 The premier league does in fact have the two highest goal scorers per league!  
 
 
-
+\newpage
 
 
 # Progressive stats 
@@ -103,6 +135,8 @@ Lets look at average progressive plays by league.
 
 Premier League is actually second in terms of average progressive plays per player, with Ligue One in the lead. However, they are second highest in progressive plays, which shows that they are still in the contenders for first place.  
 
+
+\newpage
 
 # Takeaways
 
