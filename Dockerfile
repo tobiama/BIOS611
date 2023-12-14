@@ -21,4 +21,4 @@ RUN apt update && apt install -y man-db && rm -rf /var/lib/apt/lists/*
 #RUN yes|unminimize
 
 
-RUN R -e "install.packages('rmarkdown')"
+RUN R -e "install.packages('rmarkdown', 'matlab', 'corrr', 'ggcorrplot', 'FactoMineR', 'factoextra')"
