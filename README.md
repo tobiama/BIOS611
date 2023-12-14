@@ -4,16 +4,15 @@ In this project, I will be analyzing the data of many different soccer players, 
 
 Please see my Makefile to run all code for this project.
 
-First, clone my git repository to obtain all code required for the project. 
+First, clone my git repository to obtain all code required for the project. (as a note, I used a BIOS VM for this project) 
 
 
 Next, I did things a little bit differently, but rather than being in the work directory, I mounted the parent directory of the project rather than the directory of the project itself. 
 
 Run the following lines of code: 
 
-1. cd work 
-2. cd 611
-3. docker build . -t 611
+1. cd 611
+2. docker build . -t 611
 
 611 is the folder in which all of my code is stored.
  
