@@ -111,6 +111,7 @@ transform = as.data.frame(-data.pca$loadings[,1:2])
 
 
 kmeans_d = kmeans(transform, centers = 3, nstart = 10)
-fviz_cluster(kmeans_d, data = transform)
+cluster_plot <- fviz_cluster(kmeans_d, data = transform)
 
-
+ggsave(cluster_plot, filename = "Figures/cluster_plot.jpeg", 
+       dpi = 400, width = 5, height = 3.5)

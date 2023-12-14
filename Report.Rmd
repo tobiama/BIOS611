@@ -46,7 +46,7 @@ G.A - Goals and assists
 
 G.PK - Non-penalty goals
 
-PK - Peanalty kicks made
+PK - Penalty kicks made
 
 PKatt - Penalty kicks attempted
 
@@ -88,7 +88,7 @@ Next, I will show the two distinct clusters that can be found in the data.
 ![Cluster Plot](Figures/cluster_plot.jpeg){width=50%}
 
 
-Looking closely, the red cluster represents variables such as Gls, Ast, and Pk, which are sums of different actions throughout the year.  The blue cluster is mainly commprised by averages of goals or minutes, etc. as well as expected stats per game. 
+Looking closely, the red cluster represents variables such as Gls, Ast, and Pk, which are sums of different actions throughout the year.  The blue cluster is mainly comprised by averages of goals or minutes, etc. as well as expected stats per game. 
 
 \newpage
 
@@ -123,7 +123,7 @@ The premier league does in fact have the two highest goal scorers per league!
 # Progressive stats 
 
 
-While looking at goals is one way to determine success, it can be argued that squad quality does not solely rely on goal scoring.  Many players are good without scoring goals, so instead I want to focus on progressive stats. These are counts of the number of plays (carries, passess, and receptions) that led to some form of progression in terms of field positioning or becoming closer to goal scoring.  It makes sense to assume that the more progressive plays that occur, the better a squad would be. 
+While looking at goals is one way to determine success, it can be argued that squad quality does not solely rely on goal scoring.  Many players are good without scoring goals, so instead I want to focus on progressive stats. These are counts of the number of plays (carries, passes, and receptions) that led to some form of progression in terms of field positioning or becoming closer to goal scoring.  It makes sense to assume that the more progressive plays that occur, the better a squad would be. 
 
 
 Lets look at average progressive plays by league. 
@@ -140,7 +140,7 @@ Premier League is actually second in terms of average progressive plays per play
 
 # Takeaways
 
-I think in order to make this project better, I would want to find another data set, or more data, that is related to clubs specifically, rather than just player stats.  For example, spending budgets and management statistics are really important in soccer.  Some clubs with massive amounts of funding are more likely to be successfull because they have better equipment, better managers and coaches, and the ability to purchase better quality players.  This would give a much more holistic view of a league or squad rather than just looking at players' in game abilities.  Injury reports would also be interesting to include, because these could hinder or change a players' goals scored in a season while not being representative of overall career abilities. 
+I think in order to make this project better, I would want to find another data set, or more data, that is related to clubs specifically, rather than just player stats.  For example, spending budgets and management statistics are really important in soccer.  Some clubs with massive amounts of funding are more likely to be successful because they have better equipment, better managers and coaches, and the ability to purchase better quality players.  This would give a much more holistic view of a league or squad rather than just looking at players' in game abilities.  Injury reports would also be interesting to include, because these could hinder or change a players' goals scored in a season while not being representative of overall career abilities. 
 
 Finally, I think it would be more interesting to create some sort of ideal player, in terms of the best combination of traits (maybe pulling from FIFA data) and testing this dataset against the ideal player to see what team has a real player that is most like this ideal player.  
 
